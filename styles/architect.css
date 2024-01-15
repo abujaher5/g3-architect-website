@@ -110,6 +110,57 @@ main {
   font-size: 2.9rem;
   font-weight: 700;
 }
+
+/* features section style  */
+.features {
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+}
+.features .section-title {
+  margin-top: 20px;
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.features-content .text-light-gray {
+  margin-top: 25px;
+}
+.features-content .features-card {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-card-title {
+  color: #131313;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.features-img img {
+  height: 75%;
+}
+.ten-years-badge {
+  color: #fff;
+  border-radius: 8px;
+  background: #ff900e;
+  width: 330px;
+  text-align: center;
+  padding: 40px 30px;
+  position: relative;
+  bottom: 100px;
+  right: 70px;
+}
+.ten-years-badge h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.ten-years-badge p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 /* facts card style  */
 .facts-card-container {
   display: flex;
@@ -151,6 +202,25 @@ main {
 .sponsors-logo-container img {
   width: 165px;
 }
+/* footer section styles  */
+footer {
+  max-width: 1440px;
+  margin: 120px auto;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin-top: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-desc {
+  color: #424242;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 400;
+  padding: 100px auto;
+}
 
 /* responsive style  */
 /* Mobile devices */
@@ -162,7 +232,8 @@ main {
   nav > ul,
   .teams-container,
   .facts-card-container,
-  .sponsors-logo-container {
+  .sponsors-logo-container,
+  .features {
     flex-direction: column;
   }
 
@@ -179,6 +250,20 @@ main {
     gap: 10px;
     padding: 20px;
   }
+  .features-img img {
+    height: 70%;
+    width: 70%;
+    margin: 0 0 0 30px;
+  }
+  .ten-years-badge {
+    max-width: 200px;
+    padding: 10px;
+    left: 30px;
+    bottom: 20px;
+  }
+  .ten-years-badge h2 {
+    font-size: 1.4rem;
+  }
 }
 
 /* medium devices */
@@ -189,7 +274,17 @@ main {
 
   nav,
   .teams-container,
-  .sponsors-logo-container {
+  .sponsors-logo-container,
+  .features {
     flex-direction: column;
+  }
+  .ten-years-badge {
+    max-width: 250px;
+    padding: 10px;
+    left: 30px;
+    bottom: 100px;
+  }
+  .ten-years-badge h2 {
+    font-size: 1.8rem;
   }
 }
